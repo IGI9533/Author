@@ -1,7 +1,12 @@
-.container:after, .container:before {
+.container:after, #header .main-nav:after, .container:before, #header .main-nav:before {
   content: " ";
   display: block;
   clear: both; }
+
+#header .main-nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -140,5 +145,19 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto; }
+
+#header .logo {
+  float: left; }
+
+#header .main-nav {
+  float: right; }
+  #header .main-nav li {
+    float: left; }
+  #header .main-nav a {
+    padding: 30px 10px;
+    border-bottom: 3px solid transparent; }
+    #header .main-nav a:hover {
+      color: #49cbcd;
+      border-color: #49cbcd; }
 
 /*# sourceMappingURL=styles.css.map */

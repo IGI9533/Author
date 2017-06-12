@@ -1,3 +1,21 @@
 #header {
-	
+	.logo {
+		float: left;
+	}
+	.main-nav {
+		@extend %clearfix;
+		float: right;
+		li {
+			@extend %listreset;
+			float: left;
+		}
+		a {
+			padding: 30px 10px;
+			border-bottom: 3px solid transparent;
+			&:hover {
+				color: $green;
+				border-color: $green;
+			}
+		}
+	}
 }
