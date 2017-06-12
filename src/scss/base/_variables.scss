@@ -1,0 +1,42 @@
+$grey: #4e525d;
+$grey-light: #8c9299;
+$grey-dark: #788492;
+$white: #fff;
+$smoke-white: #f1f1f1;
+$silver: #c1c1c1;
+$green: #49cbcd;
+
+$base-text-color: $grey;
+$light-text-color: $grey-light;
+$base-background-color: $white;
+$second-background-color: $smoke-white;
+
+$base-link-color: $green;
+$base-form-placeholder-color: $silver;
+$base-input-background-color: $white;
+$base-button-bg: $grey-dark;
+$base-button-color: $white;
+
+$base-font-family: "Open Sans", "Tahoma", sans-serif;
+$base-font-size: 14px;
+$base-line-height: 20px;
+
+$base-min-width: 320px;
+
+$breakpoints: (
+  xs-phone: 320px,
+  phone: 670px,
+  tablet: 768px,
+  large: 1024px,
+);
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+

@@ -1,0 +1,15 @@
+// clearfix
+%clearfix {
+  &:after, &:before {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+// reset for list
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
