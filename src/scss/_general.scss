@@ -13,4 +13,23 @@ body {
 		padding: 0 15px;
 	}
 }
-
+h1 {
+	font-size: 61px;
+	line-height: 63px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+h2 {
+	font-size: 42px;
+	line-height: 44px;
+	font-weight: normal;
+	margin: 0 0 20px;
+	text-align: center;
+	text-transform: capitalize;
+}
+p {
+	margin: 0 0 10px;
+}
+.second-bg {
+	background: $second-background-color;
+}
