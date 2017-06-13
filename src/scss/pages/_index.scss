@@ -100,3 +100,31 @@
 		}
 	}
 }
+.contact {
+	background: url("../images/contact-bg.jpg") no-repeat 0 0;
+	background-size: cover;
+	h2 {
+		color: $white;
+	}
+	.contact-holder {
+		@extend %clearfix;
+		padding-top: 60px;
+	}
+	.social-block {
+		float: left;
+		width: 50%;
+	}
+	.contact-form {
+		float: left;
+		width: 50%;
+		.btn-holder {
+			text-align: right;
+		}
+		.form-btn {
+			background: $green;
+			&:hover {
+				background: $grey-light;
+			}
+		}
+	}
+}

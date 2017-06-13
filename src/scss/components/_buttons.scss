@@ -7,9 +7,13 @@
 	line-height: 19px;
 	background: $grey-dark;
 	border-radius: 5px;
+	border: none;
 	transition: background 0.2s;
 	&:hover {
 		text-decoration: none;
 		background: $green;
+	}
+	&:focus {
+		outline: none;
 	}
 }

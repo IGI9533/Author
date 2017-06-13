@@ -1,0 +1,46 @@
+input {
+	font-family: $base-font-family;
+	width: 100%;
+	height: 43px;
+	background: $white;
+	border: none;
+	color: $grey;
+	font-size: 16px;
+	padding: 0 14px;
+	border-radius: 3px;
+}
+::-webkit-input-placeholder {color:$silver; font-weight: 100; font-size: 16px;}
+::-moz-placeholder          {color:$silver; font-weight: 100; font-size: 16px;}
+:-moz-placeholder           {color:$silver; font-weight: 100; font-size: 16px;}
+:-ms-input-placeholder      {color:$silver; font-weight: 100; font-size: 16px;}
+textarea {
+	font-family: $base-font-family;
+	background: $base-input-background-color;
+	border: none;
+	padding: 18px;
+	width: 100%;
+	color: $grey;
+	font-size: 16px;
+	border-radius: 3px;
+	height: 180px;
+	resize: none;
+}
+.form-column {
+	float: left;
+	width: 48%;
+	margin: 0 0 0 4%;
+	&:first-child {
+		margin: 0;
+	}
+	@include media("<tablet") {
+		width: 100%;
+		margin: 0;
+	}
+}
+.column-wrap {
+	@extend %clearfix;
+	margin: 0 0 23px;
+	@include media("<tablet") {
+		margin: 0 0 7px;
+	}
+}

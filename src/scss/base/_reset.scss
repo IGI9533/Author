@@ -62,7 +62,6 @@ input[type="reset"],
 input[type="file"],
 input[type="submit"]{
 	-webkit-appearance:none;
-	-webkit-border-radius:0;
 	cursor: pointer;
 }
 
@@ -74,7 +73,6 @@ input[type="password"],
 input[type="search"],
 textarea {
 	-webkit-appearance:none;
-	-webkit-border-radius:0;
 	&:focus {
 		outline: none;
 	}
