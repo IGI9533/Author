@@ -308,6 +308,8 @@ a {
     @media (max-width: 767px) {
       .team-list .image-holder {
         margin: 0 auto 15px; } }
+    .team-list .image-holder img {
+      border-radius: 50%; }
     .team-list .image-holder .hover-block {
       opacity: 0;
       position: absolute;
@@ -316,6 +318,7 @@ a {
       left: 0;
       width: 100%;
       height: 100%;
+      border-radius: 50%;
       transition: opacity 0.2s; }
       .team-list .image-holder .hover-block .icon {
         position: absolute;

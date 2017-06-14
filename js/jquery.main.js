@@ -83,22 +83,18 @@ function initValidate () {
        },
 
        messages:{
-
             name:{
                 required: "This field is required",
                 pattern: "This value seems to be invalid",
- 
             },
             email:{
                 required: "This field is required",
                 email: "Enter the correct email",
-
             },
             textarea: {
                 required: "This field is required",
             },
        },
-
     });
 }
 
