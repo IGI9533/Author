@@ -2,6 +2,9 @@ $(document).ready(function() {
     initCarousel();
     initMobileNav();
     initFixedScrollBlock();
+    documentNav();
+    initPlansHover();
+    initValidate();
 });
 
 function initCarousel() {
@@ -20,11 +23,11 @@ function initCarousel() {
 };
 
 function initMobileNav() {
-  jQuery('.wrap').mobileNav({
-    hideOnClickOutside: true,
-    menuActiveClass: 'active',
-    menuOpener: '.opener',
-    menuDrop: '.drop'
+    $('.wrap').mobileNav({
+      hideOnClickOutside: true,
+      menuActiveClass: 'active',
+      menuOpener: '.opener',
+      menuDrop: '.drop'
   });
 }
 
@@ -33,10 +36,71 @@ function initFixedScrollBlock(){
       var sticky = $('.sticky'),
           scroll = $(window).scrollTop();
 
-      if (scroll > 0) sticky.addClass('fixed');
+      if (scroll >= 30) sticky.addClass('fixed');
       else sticky.removeClass('fixed');
     });
 };
+function animateScroll(anchor, t) {
+  $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top
+    }, t);
+};
+
+function documentNav(){
+  $('body').on("click", '.main-menu a', function() {
+      var anchor = $(this);
+      animateScroll(anchor, 600);
+      return false;
+  });
+};
+
+function initPlansHover () {
+    var button = $(".plans .item .btn"),
+        parent = ".plans-block .item";
+    button.hover(
+       function(){
+            $(this).closest(parent).addClass('hover')
+        },
+       function(){
+            $(this).closest(parent).removeClass('hover')
+        }
+    );
+};
+function initValidate () {
+    $(".contact-form").validate({
+       rules:{
+            name:{
+                required: true,
+                pattern: "^([a-zA-Z\s]{3,})$",
+            },
+            email:{
+                required: true,
+                email: true,
+            },
+            textarea:{
+                required: true,
+            },
+       },
+
+       messages:{
+
+            name:{
+                required: "This field is required",
+                pattern: "This value seems to be invalid",
+ 
+            },
+            email:{
+                required: "This field is required",
+                email: "Enter the correct email",
+
+            },
+            textarea: {
+                required: "This field is required",
+            },
+       },
+
+    });
+}
 
 /*
  * Simple Mobile Navigation

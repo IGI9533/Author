@@ -122,6 +122,11 @@
 				margin: 0;
 			}
 		}
+		&.hover {
+			.title {
+				background: $green;
+			}
+		}
 		.title {
 			display: block;
 			padding: 23px 15px;
@@ -129,6 +134,7 @@
 			color: #fff;
 			font-size: 26px;
 			line-height: 28px;
+			transition: background 0.2s;
 			@include media("<tablet") {
 				padding: 15px;
 			}

@@ -46,8 +46,9 @@ a {
 	color: $base-link-color;
 }
 #wrapper {
+	padding-top: 100px;
 	@include media("<tablet") {
-		margin-top: 57px;
+		padding-top: 57px;
 	}
 }
 .second-bg {
@@ -59,4 +60,8 @@ a {
 	left: 0;
 	width: 100%;
 	z-index: 10;
+}
+.error {
+	color: #ff1515;
+	font-weight: 100;
 }
