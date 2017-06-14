@@ -31,16 +31,24 @@ textarea {
 	margin: 0 0 0 4%;
 	&:first-child {
 		margin: 0;
+		@include media("<tablet") {
+			margin: 0 0 10px;
+		}
+	}
+	&:last-child {
+		@include media("<tablet") {
+			margin: 0;
+		}
 	}
 	@include media("<tablet") {
 		width: 100%;
-		margin: 0;
+		margin: 0 0 10px;
 	}
 }
 .column-wrap {
 	@extend %clearfix;
-	margin: 0 0 23px;
+	margin: 0 0 32px;
 	@include media("<tablet") {
-		margin: 0 0 7px;
+		margin: 0 0 10px;
 	}
 }

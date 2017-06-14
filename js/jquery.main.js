@@ -6,7 +6,7 @@ $(document).ready(function() {
 function initCarousel() {
     $("#main-carousel").owlCarousel({
       navigation : true,
-      // autoPlay : true,
+      autoPlay : true,
       slideSpeed : 600,
       paginationSpeed : 800,
  
