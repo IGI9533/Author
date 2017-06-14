@@ -1,6 +1,7 @@
 $(document).ready(function() {
     initCarousel();
     initMobileNav();
+    initFixedScrollBlock();
 });
 
 function initCarousel() {
@@ -26,6 +27,16 @@ function initMobileNav() {
     menuDrop: '.drop'
   });
 }
+
+function initFixedScrollBlock(){
+    $(window).scroll(function(){
+      var sticky = $('.sticky'),
+          scroll = $(window).scrollTop();
+
+      if (scroll > 0) sticky.addClass('fixed');
+      else sticky.removeClass('fixed');
+    });
+};
 
 /*
  * Simple Mobile Navigation
